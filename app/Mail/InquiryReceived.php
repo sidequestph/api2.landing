@@ -37,6 +37,7 @@ class InquiryReceived extends Mailable
     public function build()
     {
         return $this->subject('New Inquiry Received: ' . $this->lead->interest)
+                    ->replyTo($this->lead->email, $this->lead->full_name)
                     ->view('emails.inquiry');
     }
 }
