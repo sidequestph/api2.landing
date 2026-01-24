@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Lead;
 use App\Mail\InquiryReceived;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Validation\ValidationException;
 
@@ -27,7 +28,13 @@ class LeadController extends Controller
             $lead = Lead::create($data);
 
             // Send email
-            Mail::to($lead->email)->send(new InquiryReceived($lead));
+            try {
+                Mail::to($lead->email)->send(new InquiryReceived($lead));
+                Log::info("Email sent successfully to {$lead->email}");
+            } catch (\Exception $e) {
+                Log::error("Failed to send email to {$lead->email}. Error: " . $e->getMessage());
+                throw $e;
+            }
 
             // Update last_email_sent
             $lead->update(['last_email_sent' => \Carbon\Carbon::now()]);
