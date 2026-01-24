@@ -7,6 +7,11 @@
     <meta name="x-apple-disable-message-reformatting">  <!-- Stop iOS Mail from messing with our scaling -->
     <title>Welcome to SideQuest!</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <!-- Typography Settings -->
     <!--[if mso]>
         <style>
@@ -73,7 +78,7 @@
 </head>
 
 <!-- Professional Light Theme: Light Gray Background -->
-<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f6f6f6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f6f6f6; font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
     <center style="width: 100%; background-color: #f6f6f6;">
     <!--[if mso | IE]>
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f6f6f6;">
@@ -92,8 +97,8 @@
             <!-- Header Section: Simple & Clean -->
             <tr>
                 <td style="padding: 40px 40px 20px; text-align: center; border-bottom: 3px solid #bc13fe;">
-                     <h1 style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 28px; font-weight: 800; color: #bc13fe; letter-spacing: -0.5px;">SIDEQUEST</h1>
-                     <p style="margin: 5px 0 0; font-size: 14px; color: #888888; text-transform: uppercase; letter-spacing: 1px;">Philippines</p>
+                     <h1 style="margin: 0; font-family: 'Press Start 2P', cursive; font-size: 20px; font-weight: 400; color: #bc13fe; line-height: 1.5;">SIDEQUEST</h1>
+                     <p style="margin: 5px 0 0; font-size: 14px; color: #888888; text-transform: uppercase; letter-spacing: 1px; font-family: 'Nunito', sans-serif;">Philippines</p>
                 </td>
             </tr>
 
@@ -151,15 +156,15 @@
                 <td style="padding: 30px 40px; background-color: #f4f4f4; border-radius: 0 0 8px 8px; text-align: center; border-top: 1px solid #eeeeee;">
                     
                     <!-- Social Media Icons -->
-                    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto 20px;">
+                    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto 30px;">
                         <tr>
-                            <td style="padding: 0 12px;">
+                            <td style="padding: 0 8px;">
                                 <a href="#" target="_blank" style="text-decoration: none;"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" width="24" height="24" alt="Facebook" border="0" style="display: block; width: 24px; max-width: 24px; min-width: 24px;"></a>
                             </td>
-                            <td style="padding: 0 12px;">
+                            <td style="padding: 0 8px;">
                                 <a href="#" target="_blank" style="text-decoration: none;"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" width="24" height="24" alt="Instagram" border="0" style="display: block; width: 24px; max-width: 24px; min-width: 24px;"></a>
                             </td>
-                            <td style="padding: 0 12px;">
+                            <td style="padding: 0 8px;">
                                 <a href="#" target="_blank" style="text-decoration: none;"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="24" height="24" alt="LinkedIn" border="0" style="display: block; width: 24px; max-width: 24px; min-width: 24px;"></a>
                             </td>
                         </tr>
