@@ -36,7 +36,7 @@ class InquiryReceived extends Mailable
      */
     public function build()
     {
-        return $this->subject('New Inquiry Received: ' . $this->lead->interest)
+        return $this->subject('SideQuest: Inquiry Received – Let\'s Level Up Your Business 🚀')
                     ->replyTo($this->lead->email, $this->lead->full_name)
                     ->view('emails.inquiry');
     }
