@@ -92,7 +92,7 @@
             <!-- Header Section: Simple & Clean -->
             <tr>
                 <td style="padding: 40px 40px 20px; text-align: left; border-bottom: 2px solid #bc13fe;">
-                     <h1 style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 24px; font-weight: 700; color: #bc13fe;">SideQuest</h1>
+                     <h1 style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 24px; font-weight: 700; color: #bc13fe;">SideQuest Philippines</h1>
                 </td>
             </tr>
 
@@ -102,10 +102,8 @@
                     
                     <p style="margin: 0 0 20px;">Hi {{ $lead->full_name }},</p>
                     
-                    <p style="margin: 0 0 20px;"><strong>Quest Accepted! ⚔️</strong></p>
-                    
                     <p style="margin: 0 0 20px;">
-                        Welcome to the SideQuest lobby! We are beyond <span style="color: #bc13fe; font-weight: 600;">excited</span> to have you here.
+                        Welcome to the SideQuest lobby! We are beyond excited to have you here.
                     </p>
                     
                     <p style="margin: 0 0 20px;">
@@ -148,10 +146,10 @@
                     </table>
 
                     <p style="margin: 0 0 5px; font-size: 12px; color: #999999;">
-                        &copy; {{ date('Y') }} SideQuest. All rights reserved.
+                        &copy; {{ date('Y') }} SideQuest Philippines. All rights reserved.
                     </p>
                     <p style="margin: 0; font-size: 12px; color: #999999;">
-                        <a href="https://sidequestph.com" style="color: #999999; text-decoration: underline;">sidequestph.com</a>
+                        <a href="https://sidequestph.com" style="color: #999999; text-decoration: underline;">https://sidequestph.com</a>
                     </p>
                 </td>
             </tr>
