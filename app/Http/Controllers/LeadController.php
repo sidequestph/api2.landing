@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Lead;
+use App\Mail\InquiryReceived;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Validation\ValidationException;
 
 class LeadController extends Controller
@@ -23,6 +25,12 @@ class LeadController extends Controller
             $data['ip_addr'] = $request->ip();
 
             $lead = Lead::create($data);
+
+            // Send email
+            Mail::to($lead->email)->send(new InquiryReceived($lead));
+
+            // Update last_email_sent
+            $lead->update(['last_email_sent' => \Carbon\Carbon::now()]);
 
             return response()->json([
                 'message' => 'Inquiry created successfully',
