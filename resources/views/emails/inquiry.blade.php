@@ -113,7 +113,7 @@
                     </p>
                     
                     <p style="margin: 0 0 20px;">
-                        Thank you for choosing SideQuest as your co-op partner. Our team is already reviewing your mission details, and we're equipping our gear to help you conquer your goals.
+                        Thank you for choosing us as your co-op partner. Our team is already reviewing your mission details, and we're equipping our gear to help you conquer your goals.
                     </p>
 
                     <!-- Value Prop / What's Next Section -->
@@ -156,15 +156,15 @@
                 <td style="padding: 30px 40px; background-color: #f4f4f4; border-radius: 0 0 8px 8px; text-align: center; border-top: 1px solid #eeeeee;">
                     
                     <!-- Social Media Icons -->
-                    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto 30px;">
+                    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto 42px;">
                         <tr>
-                            <td style="padding: 0 8px;">
+                            <td style="padding: 0 4px;">
                                 <a href="#" target="_blank" style="text-decoration: none;"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" width="24" height="24" alt="Facebook" border="0" style="display: block; width: 24px; max-width: 24px; min-width: 24px;"></a>
                             </td>
-                            <td style="padding: 0 8px;">
+                            <td style="padding: 0 4px;">
                                 <a href="#" target="_blank" style="text-decoration: none;"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" width="24" height="24" alt="Instagram" border="0" style="display: block; width: 24px; max-width: 24px; min-width: 24px;"></a>
                             </td>
-                            <td style="padding: 0 8px;">
+                            <td style="padding: 0 4px;">
                                 <a href="#" target="_blank" style="text-decoration: none;"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="24" height="24" alt="LinkedIn" border="0" style="display: block; width: 24px; max-width: 24px; min-width: 24px;"></a>
                             </td>
                         </tr>
