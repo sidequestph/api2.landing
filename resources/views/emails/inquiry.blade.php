@@ -83,44 +83,64 @@
 
         <!-- Preheader text -->
         <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
-            Quest Accepted! We are excited to work with you.
+            We've received your inquiry! Here is what happens next...
         </div>
 
         <!-- Main Email Container: White Paper Look -->
-        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 40px auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);" class="email-container">
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 40px auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" class="email-container">
             
             <!-- Header Section: Simple & Clean -->
             <tr>
-                <td style="padding: 40px 40px 20px; text-align: left; border-bottom: 2px solid #bc13fe;">
-                     <h1 style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 24px; font-weight: 700; color: #bc13fe;">SideQuest Philippines</h1>
+                <td style="padding: 40px 40px 20px; text-align: center; border-bottom: 3px solid #bc13fe;">
+                     <h1 style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 28px; font-weight: 800; color: #bc13fe; letter-spacing: -0.5px;">SIDEQUEST</h1>
+                     <p style="margin: 5px 0 0; font-size: 14px; color: #888888; text-transform: uppercase; letter-spacing: 1px;">Philippines</p>
                 </td>
             </tr>
 
             <!-- Main Content Area: Left Aligned "Open Letter" Style -->
             <tr>
-                <td class="content-padding" style="padding: 30px 40px 40px; text-align: left; color: #333333; font-size: 16px; line-height: 1.6;">
+                <td class="content-padding" style="padding: 40px 40px 30px; text-align: left; color: #444444; font-size: 16px; line-height: 1.6;">
                     
-                    <p style="margin: 0 0 20px;">Hi {{ $lead->full_name }},</p>
+                    <p style="margin: 0 0 20px; font-size: 18px; color: #222222;"><strong>Hi {{ $lead->full_name }},</strong></p>
                     
                     <p style="margin: 0 0 20px;">
-                        Welcome to the SideQuest lobby! We are beyond excited to have you here.
+                        <strong>Quest Accepted!</strong> We are thrilled to see your name in our lobby.
                     </p>
                     
                     <p style="margin: 0 0 20px;">
-                        Thank you for believing in us and choosing us as your co-op partner. Your inquiry has been successfully added to our quest log, and our guild of elite engineers and designers is already equipping their gear to help you conquer your goals.
+                        Thank you for choosing SideQuest as your co-op partner. Our team is already reviewing your mission details, and we're equipping our gear to help you conquer your goals.
                     </p>
-                    
-                    <p style="margin: 0 0 20px;">
-                        We know that every great adventure starts with a single step, and we're honored you took that step with us. We're currently reviewing your mission details and will ping you back faster than a speedrun! ⚡
-                    </p>
+
+                    <!-- Value Prop / What's Next Section -->
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f9f9f9; border-radius: 6px; margin: 25px 0;">
+                        <tr>
+                            <td style="padding: 20px;">
+                                <h3 style="margin: 0 0 15px; font-size: 16px; color: #bc13fe; text-transform: uppercase;">What Happens Next?</h3>
+                                <ul style="margin: 0; padding-left: 20px; color: #555555;">
+                                    <li style="margin-bottom: 10px;"><strong>Review:</strong> We analyze your requirements (0-24 hrs).</li>
+                                    <li style="margin-bottom: 10px;"><strong>Strategy:</strong> We draft a preliminary battle plan.</li>
+                                    <li style="margin-bottom: 0;"><strong>Connect:</strong> We'll reach out to schedule a discovery chat.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
                     
                     <p style="margin: 0 0 30px;">
-                        Get ready to <strong>level up</strong>!
+                        While you wait, feel free to check out our previous victories.
                     </p>
+
+                    <!-- CTA Button -->
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 30px;">
+                        <tr>
+                            <td align="center">
+                                <a href="https://sidequestph.com/#portfolio" style="display: inline-block; padding: 14px 30px; background-color: #bc13fe; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 16px; box-shadow: 0 4px 6px rgba(188, 19, 254, 0.2);">View Our Work &rarr;</a>
+                            </td>
+                        </tr>
+                    </table>
 
                     <p style="margin: 0;">
                         Best regards,<br>
-                        <strong style="color: #bc13fe;">The SideQuest Team</strong>
+                        <strong style="color: #222222;">The SideQuest Team</strong>
                     </p>
 
                 </td>
@@ -128,28 +148,32 @@
 
             <!-- Footer: Subtle & Professional -->
             <tr>
-                <td style="padding: 20px 40px; background-color: #fafafa; border-radius: 0 0 8px 8px; text-align: center; border-top: 1px solid #eeeeee;">
+                <td style="padding: 30px 40px; background-color: #f4f4f4; border-radius: 0 0 8px 8px; text-align: center; border-top: 1px solid #eeeeee;">
                     
-                    <!-- Social Media Icons (Grayscale/Subtle) -->
-                    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto 15px;">
+                    <!-- Social Media Icons -->
+                    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto 20px;">
                         <tr>
-                            <td style="padding: 0 10px;">
-                                <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" width="24" height="24" alt="Facebook" border="0" style="height: auto; filter: grayscale(100%); opacity: 0.7;"></a>
+                            <td style="padding: 0 12px;">
+                                <a href="#" target="_blank" style="text-decoration: none;"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" width="24" height="24" alt="Facebook" border="0" style="display: block; width: 24px; max-width: 24px; min-width: 24px;"></a>
                             </td>
-                            <td style="padding: 0 10px;">
-                                <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" width="24" height="24" alt="Instagram" border="0" style="height: auto; filter: grayscale(100%); opacity: 0.7;"></a>
+                            <td style="padding: 0 12px;">
+                                <a href="#" target="_blank" style="text-decoration: none;"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" width="24" height="24" alt="Instagram" border="0" style="display: block; width: 24px; max-width: 24px; min-width: 24px;"></a>
                             </td>
-                            <td style="padding: 0 10px;">
-                                <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="24" height="24" alt="LinkedIn" border="0" style="height: auto; filter: grayscale(100%); opacity: 0.7;"></a>
+                            <td style="padding: 0 12px;">
+                                <a href="#" target="_blank" style="text-decoration: none;"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="24" height="24" alt="LinkedIn" border="0" style="display: block; width: 24px; max-width: 24px; min-width: 24px;"></a>
                             </td>
                         </tr>
                     </table>
 
-                    <p style="margin: 0 0 5px; font-size: 12px; color: #999999;">
-                        &copy; {{ date('Y') }} SideQuest Philippines. All rights reserved.
+                    <p style="margin: 0 0 10px; font-size: 12px; color: #888888; line-height: 1.5;">
+                        &copy; {{ date('Y') }} SideQuest Philippines. All rights reserved.<br>
+                        Manila, Philippines
                     </p>
-                    <p style="margin: 0; font-size: 12px; color: #999999;">
-                        <a href="https://sidequestph.com" style="color: #999999; text-decoration: underline;">https://sidequestph.com</a>
+                    
+                    <p style="margin: 0; font-size: 12px; color: #888888;">
+                        <a href="https://sidequestph.com" style="color: #888888; text-decoration: underline;">Visit Website</a>
+                        <span style="margin: 0 5px;">|</span>
+                        <a href="#" style="color: #888888; text-decoration: underline;">Privacy Policy</a>
                     </p>
                 </td>
             </tr>
