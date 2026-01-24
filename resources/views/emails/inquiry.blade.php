@@ -23,6 +23,9 @@
 
     <!-- CSS Resets to normalize client behavior -->
     <style>
+        /* Import fonts for clients that support it (like Apple Mail) */
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Press+Start+2P&display=swap');
+
         /* Kill default margins/padding from clients */
         html,
         body {
@@ -78,7 +81,7 @@
 </head>
 
 <!-- Professional Light Theme: Light Gray Background -->
-<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f6f6f6; font-family: 'Rubik', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f6f6f6; font-family: 'Rubik', Verdana, Arial, sans-serif;">
     <center style="width: 100%; background-color: #f6f6f6;">
     <!--[if mso | IE]>
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f6f6f6;">
@@ -97,8 +100,8 @@
             <!-- Header Section: Simple & Clean -->
             <tr>
                 <td style="padding: 40px 40px 20px; text-align: center; border-bottom: 3px solid #bc13fe;">
-                     <h1 style="margin: 0; font-family: 'Press Start 2P', cursive; font-size: 20px; font-weight: 400; color: #bc13fe; line-height: 1.5;">SIDEQUEST</h1>
-                     <p style="margin: 5px 0 0; font-size: 14px; color: #888888; text-transform: uppercase; letter-spacing: 1px; font-family: 'Rubik', sans-serif;">Philippines</p>
+                     <h1 style="margin: 0; font-family: 'Press Start 2P', 'Courier New', Courier, monospace; font-size: 20px; font-weight: 400; color: #bc13fe; line-height: 1.5;">SIDEQUEST</h1>
+                     <p style="margin: 5px 0 0; font-size: 14px; color: #888888; text-transform: uppercase; letter-spacing: 1px; font-family: 'Rubik', Verdana, Arial, sans-serif;">Philippines</p>
                 </td>
             </tr>
 
