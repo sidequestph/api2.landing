@@ -39,7 +39,7 @@ class Lead extends Model
      */
     public static $rules = [
         'full_name' => 'required|string|min:3|max:100',
-        'email' => 'required|string|email|max:100',
+        'email' => 'required|string|email|max:100|not_in:no-reply@sidequestph.com',
         'interest' => 'required|string|max:30',
         'message' => 'nullable|string',
         'ip_addr' => 'required|string|max:45',
