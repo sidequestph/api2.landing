@@ -130,12 +130,12 @@
                         </tr>
                     </table>
                     
-                    <p style="margin: 0 0 30px;">
+                    <p style="margin: 20px 0 30px;">
                         While you wait, feel free to check out our previous victories.
                     </p>
 
                     <!-- CTA Button -->
-                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 30px;">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 62px;">
                         <tr>
                             <td align="center">
                                 <a href="https://sidequestph.com/#portfolio" style="display: inline-block; padding: 14px 30px; background-color: #bc13fe; color: #ffffff; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 16px; box-shadow: 0 4px 6px rgba(188, 19, 254, 0.2);">View Our Work &rarr;</a>
@@ -143,7 +143,7 @@
                         </tr>
                     </table>
 
-                    <p style="margin: 0;">
+                    <p style="margin: 20px 0 0;">
                         Best regards,<br>
                         <strong style="color: #222222;">The SideQuest Team</strong>
                     </p>
