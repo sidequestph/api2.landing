@@ -15,7 +15,10 @@ class CorsMiddleware
      */
     public function handle($request, Closure $next)
     {
-        $allowedOrigins = ['https://sidequestph.com'];
+        $allowedOrigins = [
+            'https://sidequestph.com',
+            'https://saddlebrown-peafowl-357277.hostingersite.com'
+        ];
         $origin = $request->header('Origin');
 
         // Check if the origin is allowed
