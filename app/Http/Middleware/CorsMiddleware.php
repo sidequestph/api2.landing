@@ -15,6 +15,11 @@ class CorsMiddleware
      */
     public function handle($request, Closure $next)
     {
+        // Bypass CORS check for unsubscribe route (public access required)
+        if ($request->is('unsubscribe/*')) {
+            return $next($request);
+        }
+
         $origin = $request->header('Origin');
 
         // Allow sidequestph.com or any subdomain of hostingersite.com
