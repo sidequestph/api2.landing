@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\NewsletterSubscriber;
 use App\Mail\NewsletterSubscription;
+use App\Mail\UnsubscribeConfirmation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
@@ -82,8 +83,17 @@ class NewsletterSubscriberController extends Controller
         $subscriber = NewsletterSubscriber::find($id);
 
         if ($subscriber) {
+            $email = $subscriber->email;
             $subscriber->delete();
-            Log::info("Subscriber {$subscriber->email} (ID: {$id}) unsubscribed successfully.");
+            Log::info("Subscriber {$email} (ID: {$id}) unsubscribed successfully.");
+
+            // Send unsubscribe confirmation email
+            try {
+                Mail::to($email)->send(new UnsubscribeConfirmation());
+                Log::info("Unsubscribe confirmation email sent to {$email}");
+            } catch (\Exception $e) {
+                Log::error("Failed to send unsubscribe confirmation email to {$email}. Error: " . $e->getMessage());
+            }
         }
 
         return view('emails.unsubscribed');
