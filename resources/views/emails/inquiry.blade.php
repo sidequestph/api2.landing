@@ -35,7 +35,7 @@
                      Ensure APP_URL in .env is set to your actual domain (e.g., https://sidequestph.com)
                      for the image to load correctly in email clients.
                 -->
-                <img src="{{ url('images/inquiry-response.png') }}" alt="Thank you for your inquiry">
+                <img src="{{ url('images/inquiry-response.jpg') }}" alt="Thank you for your inquiry">
             </td>
         </tr>
     </table>
