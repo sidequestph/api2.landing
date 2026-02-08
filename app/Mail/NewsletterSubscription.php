@@ -1,0 +1,42 @@
+<?php
+
+namespace App\Mail;
+
+use App\Models\NewsletterSubscriber;
+use Illuminate\Bus\Queueable;
+use Illuminate\Mail\Mailable;
+use Illuminate\Queue\SerializesModels;
+
+class NewsletterSubscription extends Mailable
+{
+    use Queueable, SerializesModels;
+
+    /**
+     * The newsletter subscriber instance.
+     *
+     * @var \App\Models\NewsletterSubscriber
+     */
+    public $subscriber;
+
+    /**
+     * Create a new message instance.
+     *
+     * @param  \App\Models\NewsletterSubscriber  $subscriber
+     * @return void
+     */
+    public function __construct(NewsletterSubscriber $subscriber)
+    {
+        $this->subscriber = $subscriber;
+    }
+
+    /**
+     * Build the message.
+     *
+     * @return $this
+     */
+    public function build()
+    {
+        return $this->subject('Welcome to SideQuest Newsletter!')
+                    ->view('emails.newsletter');
+    }
+}

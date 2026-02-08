@@ -18,3 +18,4 @@
 // });
 
 $router->post('/inquiry', ['middleware' => 'throttle:5,15', 'uses' => 'LeadController@store']);
+$router->post('/subscribe', ['middleware' => 'throttle:5,15', 'uses' => 'NewsletterSubscriberController@store']);
