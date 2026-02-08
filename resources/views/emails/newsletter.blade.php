@@ -8,12 +8,12 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #000000;
+            background-color: #f6f6f6;
         }
         table {
             border-spacing: 0;
             width: 100%;
-            background-color: #000000;
+            background-color: #f6f6f6;
         }
         td {
             padding: 0;
@@ -27,8 +27,8 @@
         }
     </style>
 </head>
-<body style="background-color: #000000;">
-    <table role="presentation" style="background-color: #000000;">
+<body style="background-color: #f6f6f6;">
+    <table role="presentation" style="background-color: #f6f6f6;">
         <tr>
             <td>
                 <!-- 
