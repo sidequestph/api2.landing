@@ -27,7 +27,7 @@ class UnsubscribeConfirmation extends Mailable
      */
     public function build()
     {
-        return $this->subject('Unsubscribe Confirmation')
+        return $this->subject('Quest Update: You\'ve Unsubscribed')
                     ->from('no-reply@sidequestph.com', 'SideQuest Philippines')
                     ->replyTo('no-reply@sidequestph.com', 'SideQuest Philippines')
                     ->view('emails.unsubscribe_confirmation');

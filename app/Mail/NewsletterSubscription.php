@@ -39,7 +39,7 @@ class NewsletterSubscription extends Mailable
     {
         $unsubscribeUrl = URL::signedRoute('newsletter.unsubscribe', ['id' => $this->subscriber->id]);
 
-        return $this->subject('Welcome to SideQuest Newsletter!')
+        return $this->subject('Welcome to SideQuest Newsletter')
                     ->from('no-reply@sidequestph.com', 'SideQuest Philippines')
                     ->replyTo('no-reply@sidequestph.com', 'SideQuest Philippines')
                     ->view('emails.newsletter')
