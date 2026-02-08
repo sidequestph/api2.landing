@@ -65,4 +65,27 @@ class NewsletterSubscriberController extends Controller
             ], 500);
         }
     }
+
+    /**
+     * Unsubscribe a user.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function unsubscribe(Request $request, $id)
+    {
+        if (!$request->hasValidSignature()) {
+            abort(403, 'Invalid or expired unsubscribe link.');
+        }
+
+        $subscriber = NewsletterSubscriber::find($id);
+
+        if ($subscriber) {
+            $subscriber->delete();
+            Log::info("Subscriber {$subscriber->email} (ID: {$id}) unsubscribed successfully.");
+        }
+
+        return view('emails.unsubscribed');
+    }
 }

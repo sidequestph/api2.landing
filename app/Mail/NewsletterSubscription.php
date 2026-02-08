@@ -6,6 +6,7 @@ use App\Models\NewsletterSubscriber;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\URL;
 
 class NewsletterSubscription extends Mailable
 {
@@ -36,7 +37,10 @@ class NewsletterSubscription extends Mailable
      */
     public function build()
     {
+        $unsubscribeUrl = URL::signedRoute('newsletter.unsubscribe', ['id' => $this->subscriber->id]);
+
         return $this->subject('Welcome to SideQuest Newsletter!')
-                    ->view('emails.newsletter');
+                    ->view('emails.newsletter')
+                    ->with(['unsubscribeUrl' => $unsubscribeUrl]);
     }
 }

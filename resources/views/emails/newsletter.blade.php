@@ -39,6 +39,12 @@
                 <img src="{{ url('images/newsletter-response.jpg') }}" alt="Welcome to our Newsletter">
             </td>
         </tr>
+        <tr>
+            <td style="padding: 20px; font-family: sans-serif; font-size: 12px; color: #666666;">
+                <p>You received this email because you subscribed to our newsletter.</p>
+                <p><a href="{{ $unsubscribeUrl }}" style="color: #666666; text-decoration: underline;">Unsubscribe</a></p>
+            </td>
+        </tr>
     </table>
 </body>
 </html>
