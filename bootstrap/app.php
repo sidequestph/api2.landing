@@ -85,6 +85,7 @@ $app->middleware([
 
 $app->routeMiddleware([
     'throttle' => App\Http\Middleware\ThrottleRequests::class,
+    'fortress' => App\Http\Middleware\FortressSecurityMiddleware::class,
 ]);
 
 /*
@@ -100,6 +101,7 @@ $app->routeMiddleware([
 
 $app->register(App\Providers\AppServiceProvider::class);
 $app->register(Illuminate\Mail\MailServiceProvider::class);
+$app->register(Illuminate\Redis\RedisServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
 

@@ -20,3 +20,10 @@
 $router->post('/inquiry', ['middleware' => 'throttle:5,15', 'uses' => 'LeadController@store']);
 $router->post('/subscribe', ['middleware' => 'throttle:5,15', 'uses' => 'NewsletterSubscriberController@store']);
 $router->get('/unsubscribe/{id}', ['as' => 'newsletter.unsubscribe', 'uses' => 'NewsletterSubscriberController@unsubscribe']);
+
+// SideQuest Fortress Licensing API
+$router->group(['prefix' => 'v1/license', 'middleware' => ['throttle:60,1', 'fortress']], function () use ($router) {
+    $router->post('activate', 'LicenseController@activate');
+    $router->post('check', 'LicenseController@check');
+    $router->post('deactivate', 'LicenseController@deactivate');
+});
