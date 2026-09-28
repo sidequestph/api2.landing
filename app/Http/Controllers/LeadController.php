@@ -20,9 +20,7 @@ class LeadController extends Controller
     public function store(Request $request)
     {
         try {
-            $this->validate($request, Lead::$rules);
-
-            $data = $request->except(['ip_addr', 'last_email_sent']);
+            $data = $this->validate($request, Lead::$rules);
             $data['ip_addr'] = $request->ip();
 
             $lead = Lead::create($data);

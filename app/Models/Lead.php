@@ -14,6 +14,7 @@ class Lead extends Model
     protected $fillable = [
         'full_name',
         'email',
+        'company',
         'mobile_number',
         'interest',
         'message',
@@ -41,7 +42,7 @@ class Lead extends Model
     public static $rules = [
         'full_name' => 'required|string|min:3|max:100',
         'email' => 'required|string|email|max:100|not_in:no-reply@sidequestph.com',
-        'mobile_number' => 'required|string|max:20',
+        'company' => 'nullable|string|max:100',
         'interest' => 'required|string|max:30',
         'message' => 'nullable|string',
         'ip_addr' => 'required|string|max:45',
